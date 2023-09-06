@@ -1,36 +1,11 @@
 import React from "react";
-import {View, Text, StyleSheet, TouchableOpacity,Image} from 'react-native'
+import {ScrollView,View, Text, StyleSheet, TouchableOpacity,Image} from 'react-native'
 
 
 const HomeScreen= ({navigation}) =>{
    
     return(
       <View style={styles.container}>
-        <View style={styles.cardAbout}>
-            <Image 
-            style = {styles.conImg}
-            source={require('../img/p1.jpeg')} 
-            />
-            <Text style = {styles.title}>6421600042</Text>
-            <Text style = {styles.subTitle}>นาย ชนม์ธนวัฒน์ แก้วกัณฑ์</Text>
-        </View>
-        <View style={styles.cardAbout}>
-            <Image 
-            style = {styles.conImg}
-            source={require('../img/p2.jpg')} 
-            />
-            <Text style = {styles.title}>6421600069</Text>
-            <Text style = {styles.subTitle}>นาย ณภัทรนันท์ ศิลปะ</Text>
-        </View>
-        <View style={styles.cardAbout}>
-            <Image 
-            style = {styles.conImg}
-            source={require('../img/p3.jpg')} 
-            />
-            <Text style = {styles.title}>6421600123</Text>
-            <Text style = {styles.subTitle}>นาย ปวริศ มุ้ยจีน</Text>
-        </View>
-
 
         <TouchableOpacity
             style = {styles.bS}
@@ -40,7 +15,32 @@ const HomeScreen= ({navigation}) =>{
                 <Text> Pass for go to API app </Text>
             </View>
         </TouchableOpacity>
-        
+        <ScrollView>
+            <View style={styles.cardAbout}>
+                <Image 
+                style = {styles.conImg}
+                source={require('../img/p1.jpeg')} 
+                />
+                <Text style = {styles.title}>6421600042</Text>
+                <Text style = {styles.subTitle}>นาย ชนม์ธนวัฒน์ แก้วกัณฑ์</Text>
+            </View>
+            <View style={styles.cardAbout}>
+                <Image 
+                style = {styles.conImg}
+                source={require('../img/p2.jpg')} 
+                />
+                <Text style = {styles.title}>6421600069</Text>
+                <Text style = {styles.subTitle}>นาย ณภัทรนันท์ ศิลปะ</Text>
+            </View>
+            <View style={styles.cardAbout}>
+                <Image 
+                style = {styles.conImg}
+                source={require('../img/p3.jpg')} 
+                />
+                <Text style = {styles.title}>6421600123</Text>
+                <Text style = {styles.subTitle}>นาย ปวริศ มุ้ยจีน</Text>
+            </View>
+        </ScrollView>
        </View>  
     );
 };
@@ -71,7 +71,6 @@ const styles = StyleSheet.create({
         marginTop:10,
         justifyConten:'center',
         alignItems:'center',
-        width:'70%',
     },
     conImg:{
         width: 150,
