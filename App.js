@@ -11,7 +11,7 @@ const App = () => {
         <Stack.Screen name="Home" 
           component={HomeScreen}
           options={{
-            title: "AOBUT",
+            title: "ABOUT",
             headerTintColor:"#fff",
             headerStyle: {
             backgroundColor: '#1E4543',
